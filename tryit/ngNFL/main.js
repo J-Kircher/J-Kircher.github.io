@@ -4571,7 +4571,7 @@ var TeamDetailsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card>\r\n  <div class=\"team-head-text\">\r\n    NFL Teams\r\n  </div>\r\n  <div fxLayout=\"row wrap\" fxLayout.xs=\"column wrap\"\r\n    [@listAnimations]=\"{ value: teamsArr.length, params: { stagger: '50ms' } }\">\r\n    <div fxFlex.gt-xs=\"50%\" fxFlex.gt-md=\"25%\" *ngFor=\"let team of teamsArr\">\r\n      <div class=\"team-container\" (click)=\"showTeam(team.abbrev)\"\r\n        [ngStyle]=\"{'color':'#'+team.lightcolor, 'background-color':'#'+team.darkcolor}\">\r\n        <div class=\"team-info\">\r\n          <img src=\"/assets/images/{{team.abbrev}}.png\" class=\"logo\">\r\n          <span>{{team.city}}<br>{{team.name}}</span>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</mat-card>\r\n"
+module.exports = "<mat-card>\r\n  <div class=\"team-head-text\">\r\n    NFL Teams\r\n  </div>\r\n  <div fxLayout=\"row wrap\" fxLayout.xs=\"column wrap\"\r\n    [@listAnimations]=\"{ value: teamsArr.length, params: { stagger: '50ms' } }\">\r\n    <div fxFlex.gt-xs=\"50%\" fxFlex.gt-md=\"25%\" *ngFor=\"let team of teamsArr\">\r\n      <div class=\"team-container\" (click)=\"showTeam(team.abbrev)\"\r\n        [ngStyle]=\"{'color':'#'+team.lightcolor, 'background-color':'#'+team.darkcolor}\">\r\n        <div class=\"team-info\">\r\n          <img src=\"./assets/images/{{team.abbrev}}.png\" class=\"logo\">\r\n          <span>{{team.city}}<br>{{team.name}}</span>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</mat-card>\r\n"
 
 /***/ }),
 
